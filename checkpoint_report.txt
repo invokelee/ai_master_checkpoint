@@ -1,0 +1,85 @@
+AI MASTER PREREQUISITES CHECKPOINT
+
+
+--- SYSTEM INFORMATION ---
+
+Username: user
+Hostname: 1_xterm
+Current directory: /home/user/ros2_ws
+Linux kernel: 4.15.0-1009-aws
+Python version: 3.10.12
+Current date: 2026-10-19 14:09:07
+
+
+--- ROS 2 TOPICS ---
+
+/camera/image_raw [sensor_msgs/msg/Image]
+/clock [rosgraph_msgs/msg/Clock]
+/cmd_vel [geometry_msgs/msg/Twist]
+/joint_states [sensor_msgs/msg/JointState]
+/odom [nav_msgs/msg/Odometry]
+/parameter_events [rcl_interfaces/msg/ParameterEvent]
+/robot_description [std_msgs/msg/String]
+/rosout [rcl_interfaces/msg/Log]
+/scan [sensor_msgs/msg/LaserScan]
+/tf [tf2_msgs/msg/TFMessage]
+/tf_static [tf2_msgs/msg/TFMessage]
+
+
+--- ROS 2 MESSAGE TYPES ---
+
+/camera/image_raw: sensor_msgs/msg/Image
+/cmd_vel: geometry_msgs/msg/Twist
+/odom: nav_msgs/msg/Odometry
+/scan: sensor_msgs/msg/LaserScan
+/tf: tf2_msgs/msg/TFMessage
+
+
+--- TOPIC FREQUENCIES ---
+
+/scan: 23.9 Hz
+/odom: 24.0 Hz
+/camera/image_raw: 5.8 Hz
+
+
+--- TOPIC INSPECTION ---
+
+Odometry position field: pose.pose.position (x, y, z in meters)
+Odometry orientation field: pose.pose.orientation (quaternion x, y, z, w)
+LaserScan ranges field: ranges (float32[], one distance per beam from angle_min to angle_max)
+LaserScan distance unit: meters
+
+
+--- RVIZ2 INSPECTION ---
+
+Fixed Frame: odom
+
+
+--- TF FRAMES ---
+
+Frame 1: odom
+Frame 2: base_footprint
+Frame 3: base_link
+
+
+--- TF KNOWLEDGE ---
+
+Purpose of /tf: publishes the dynamic (changing) coordinate frame transforms, e.g. odom -> base_footprint as the robot moves.
+
+Purpose of /tf_static: publishes fixed transforms that never change (latched), e.g. base_link -> camera and base_link -> lidar.
+
+Reason RViz2 requires a Fixed Frame: all data is displayed in one common, non-moving reference frame; RViz2 transforms every message into it using TF.
+
+
+--- MISSION RESULT ---
+
+Mission status: SUCCESS - target reached
+Target X: -5.62021446228027
+Target Y: -3.63326478004456
+Final X: -5.626
+Final Y: -3.338
+Final distance to target: 0.295 m
+Scans processed: 685
+Odometry messages processed: 686
+Camera messages received: 166
+Arrival image: /home/user/ros2_ws/src/ai_master_checkpoint/checkpoint_result/arrival_image.png
