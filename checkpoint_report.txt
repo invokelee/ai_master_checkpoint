@@ -8,7 +8,7 @@ Hostname: 1_xterm
 Current directory: /home/user/ros2_ws
 Linux kernel: 4.15.0-1009-aws
 Python version: 3.10.12
-Current date: 2026-10-19 14:09:07
+Current date: 2026-10-19 14:58:32
 
 
 --- ROS 2 TOPICS ---
@@ -37,9 +37,9 @@ Current date: 2026-10-19 14:09:07
 
 --- TOPIC FREQUENCIES ---
 
-/scan: 23.9 Hz
+/scan: 24.0 Hz
 /odom: 24.0 Hz
-/camera/image_raw: 5.8 Hz
+/camera/image_raw: 5.7 Hz
 
 
 --- TOPIC INSPECTION ---
@@ -77,9 +77,9 @@ Mission status: SUCCESS - target reached
 Target X: -5.62021446228027
 Target Y: -3.63326478004456
 Final X: -5.626
-Final Y: -3.338
-Final distance to target: 0.295 m
-Scans processed: 685
-Odometry messages processed: 686
-Camera messages received: 166
+Final Y: -3.339
+Final distance to target: 0.294 m
+Scans processed: 686
+Odometry messages processed: 687
+Camera messages received: 164
 Arrival image: /home/user/ros2_ws/src/ai_master_checkpoint/checkpoint_result/arrival_image.png

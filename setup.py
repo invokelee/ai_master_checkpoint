@@ -19,7 +19,7 @@ setup(
     zip_safe=True,
     maintainer='user',
     maintainer_email='user@todo.todo',
-    description='TODO: Package description',
+    description='Autonomous TurtleBot4 navigation checkpoint using /odom and /scan.',
     license='TODO: License declaration',
     extras_require={
         'test': [
